@@ -29,6 +29,8 @@ const App = () => {
   });
   const [loaded, setLoaded] = useState(true);
   const [cityName, setCityName] = useState('');
+
+  //Fetching API
   async function fetchData(city) {
     setLoaded(false);
     let API = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`;
